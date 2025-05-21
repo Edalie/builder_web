@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div
-      className="relative bg-cover bg-center  min-h-screen p-20"
+   <div>
+     <div
+      className="relative bg-cover bg-center bg-no-repeat p-20"
       style={{ background: "url('/background/first-bg.jpg')" }}
     >
       <div className="ml-16">
@@ -29,13 +30,15 @@ export default function Page() {
           <button className=' font-bold border-3 border-black rounded-xl cursor-auto hover:bg-white  text-black p-4 my-7 '>À PROPOS DE NOUS</button>
           </div>
         </div>
-        <div>
-         
-        </div>
+        
 
         
       </div>
     </div>
+    <div>
+         <p className='text-amber-300 left absolute'>BIENVENUE À</p>
+        </div>
+   </div>
   )
 }
 
