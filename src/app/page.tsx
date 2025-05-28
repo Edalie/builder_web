@@ -1,9 +1,8 @@
 import { Didact_Gothic } from "next/font/google";
 import React from "react";
-
 export default function Page() {
   return (
-    <div className="">
+    <div className=" leading-normal">
       <div
         className="bg-no-repeat bg-center bg-cover py-40"
         style={{ background: "url('/background/bg-n.jpg')" }}
@@ -40,18 +39,18 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="  bg-white flex flex-col justify-center ml-40 shadow-black font-bold ">
+      <div className="flex flex-raw items-center justify-center p-10">
+        <div className="p-10 items-center bg-white shadow-black font-bold ">
           <p className="text-3xl p-4 text-amber-300">BIENVENUE À</p>
           <p className="text-4xl ">CONSTRUCTION ELVO</p>
-          <p className="p-0.5 max-w-50 mt-6 bg-yellow-400 "></p>
+          <p className="p-0.5 w-30  bg-yellow-400 "></p>
           <p className="italic text-gray-400 mt-4 ">
             Nous sommes le leader avec 25 ans d'expérience
             <br />
             sur le marché de la construction!
           </p>
         </div>
-        <div className=" flex flex-col justify-center items-start gap-10 font-extralight">
+        <div className=" w-200  leading-normal font-extralight">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             gravida cursus eleifend. Nullam ornare sapien quis vulputate
@@ -67,30 +66,33 @@ export default function Page() {
             elementumpush congue. Cras varius, enim vitae condimentum mattis,
             erat lacus.
           </p>
-       
-        <button className="bg-amber-400 text-white rounded font-bold cursor-auto p-5 my-6 hover:bg-yellow-600">
-          {" "}
-          LIRE LA SUITE
-        </button> </div>
+          <button className="bg-amber-400 text-white rounded font-bold cursor-auto p-5 my-6 hover:bg-yellow-600">
+            {" "}
+            LIRE LA SUITE
+          </button>{" "}
+        </div>
       </div>
-      <div className="flex justify-center ">
-        <img
-          src="/background/bg-lok.jpg"
-          alt="image 1"
-          className="w-1/2 object-cover h-100 "
-        />
-        <img
-          src="/background/bg-lop.jpg"
-          alt="image 2"
-          className="w-1/2 object-cover  h-100 "
-        />
-        <img
-          src="/background/bg-n.jpg"
-          alt="image 3"
-          className="w-1/2  object-cover h-100"
-        />
+      <div className="p-20 bg-cover">
+        <div className="flex flex-row justify-center ">
+          <img
+            src="/background/bg-lok.jpg"
+            alt="image 1"
+            className="w-full  h-[500px] "
+          />
+          <img
+            src="/background/bg-lop.jpg"
+            alt="image 2"
+            className="w-full  h-[500px] "
+          />
+          <img
+            src="/background/bg-n.jpg"
+            alt="image 3"
+            className="w-full  h-[500px]"
+          />
+        </div>
       </div>
-      <div className=" text-center flex flex-col items-center  shadow-black py-35">
+
+      <div className="  flex flex-col items-center shadow-black py-35">
         <p className="text-amber-300 text-3xl font-bold ">OFFRE SPÉCIALE</p>
         <p className=" text-4xl p-3 font-bold ">NOS MEILLEURS SERVICES</p>
         <p className="p-0.5 w-50 bg-yellow-400 "></p>
@@ -102,7 +104,7 @@ export default function Page() {
               className="w-30  border-2 border-amber-400 rounded-2xl h-25"
             />
             <div className="">
-              <h1 className="font-bold  "> CONCEPTION ET PLANIFICATION</h1>
+              <h1 className="font-bold"> CONCEPTION ET PLANIFICATION</h1>
               <p>
                 Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit.
@@ -182,9 +184,11 @@ export default function Page() {
         </ul>
       </div>
       <div>
-        <div className="bg-black pl-20 flex flex-col items-center w-full p-20">
-          <p className="text-yellow-300 text-center text-xl">PORTEFEUILLE </p>
-          <p className="text-3xl text-center text-white  font bold">
+        <div className="bg-black  flex flex-col items-center w-full p-20">
+          <p className="text-yellow-300 p-4  text-center text-2xl">
+            PORTEFEUILLE{" "}
+          </p>
+          <p className="text-4xl text-center text-white  p-4 font bold">
             LES PROJETS RÉCENTS
           </p>
           <p className="p-0.5 w-50  bg-yellow-400 "></p>
@@ -224,134 +228,145 @@ export default function Page() {
           className=" h-100 w-1/2 "
         />
       </div>
-      <div className="items-center">
-        <img
-          src="/background/map-bg.jpg"
-          alt="image map "
-          className=" w-auto h-100  "
-        />
+      <div className=" flex flex-row justify-center ">
+        <div className="">
+          <img
+            src="/background/map-bg.jpg"
+            alt="image map "
+            className=" w-250 h-200  "
+          />
+        </div>
+        <div className="flex flex-col w-300 items-center ">
+          <div className="p-20 ">
+            <p className="font-bold text-4xl  text-yellow-400">
+              CONSTRUCTION ELVO
+            </p>
+            <p className="font-bold p-6 text-black text-7xl">
+              LA MEILLEURE ÉQUIPE MONDIALE
+            </p>
+            <p className="p-0.5 w-50 bg-yellow-400 "></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              gravida cursus eleifend. Nullam ornare sapien quis vulputate
+              cursus. Vivamus vel pellentesque purus, sed dignissim elit.
+              Maecenas ac augue metus. Suspendisse in elit nibh. Vestibulum in
+              nibh risus. Phasellus ut cursus sem.
+            </p>
+
+            <button className="bg-amber-400 text-white rounded font-bold cursor-auto p-5 my-6 hover:bg-yellow-600">
+              LIRE LA SUITE
+            </button>
+          </div>
+        </div>
       </div>
-      <div>
-      <div className=" flex flex-col items-center ">
-        <h1
-          className="font-bold text-2xl text-center
-         text-yellow-400"
-        >
-          CONSTRUCTION ELVO
-        </h1>
-        <h1 className="font-bold p-6 text-black text-4xl">
-          LA MEILLEURE ÉQUIPE MONDIALE
-        </h1>
-        <h1 className="p-0.5 w-50  bg-yellow-400 "></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          gravida cursus eleifend. Nullam ornare sapien quis vulputate cursus.
-          Vivamus vel pellentesque purus, sed dignissim elit. Maecenas ac augue
-          metus. Suspendisse in elit nibh. Vestibulum in nibh risus. Phasellus
-          ut cursus sem.
-        </p>
-    
-      
-        <button className="bg-amber-400 text-white rounded font-bold cursor-auto p-5 my-6 hover:bg-yellow-600">
-          LIRE LA SUITE
-        </button>   
-         </div>
-      
-      </div>
-      <div className="flex flex-row items-center h-[500px] bg-cover bg-center bg-[url('/background/br-bg.jpg')]">
-      </div>
-        <div className="flex flex-row mt-20 p-50 justify-center ">
-          <div>
-            <h1 className="font-bold text-3xl  text-yellow-300">
-              650
-            </h1>
-            <p className="text-grey space-x-100 ">Clients satisfaits</p>
-              <p className="p-0.5 w-50 flex flex-col bg-yellow-400 "></p>
+      <div className=" items-center h-[500px] bg-cover bg-center bg-[url('/background/br-bg.jpg')]">
+        <div className="flex flex-raw  mt-20 justify-center ">
+          <div className="p-50 ">
+            <h1 className="font-bold text-4xl   text-yellow-300">8 650</h1>
+            <p className="text-black text-center text-2xl  ">
+              Clients satisfaits
+            </p>
+            <p className="p-0.5 w-20  bg-yellow-400 "></p>
           </div>
 
-          <div>
-            <h1 className="font-bold text-3xl a flex flex-row space-x-3 text-yellow-300">
-              2 500
-            </h1>
-            <p className="text-grey ">Projets achevés</p>
-              <p className="p-0.5 w-50 flex flex-col justify center bg-yellow-400 "></p>
+          <div className="p-50 ">
+            <h1 className="font-bold text-4xl   text-yellow-300">2 500</h1>
+            <p className="text-black  text-2xl text-center ">Projets achevés</p>
+            <p className="p-0.5 w-20 l justify center bg-yellow-400 "></p>
           </div>
-          <div>
-            <h1 className="font-bold text-3xl  flex flex-row  text-yellow-300">
-              1 500
-            </h1>
-            <p className="text-grey ">Contrats signés</p>  
-            <p className="p-0.5 w-50 flex flex-col justify center bg-yellow-400 "></p>
+          <div className="p-50">
+            <h1 className="font-bold text-4xl    text-yellow-300">1 500</h1>
+            <p className="text-black  text-2xl text-center ">Contrats signés</p>
+            <p className="p-0.5 w-20 justify center bg-yellow-400 "></p>
           </div>
-          <div>
-            <h1 className="font-bold text-3xl flex flex-row justify-center text-yellow-300">
+          <div className="p-50">
+            <h1 className="font-bold text-4xl not-first:justify-center text-yellow-300">
               9 000
             </h1>
-            <p className="text-grey ">Aime dans les médias sociaux</p>  
-            <p className="p-0.5 w-50 flex flex-col justify center bg-yellow-400 "></p>
+            <p className="text-black  text-2xl text-center ">
+              Aime dans les médias sociaux
+            </p>
+            <p className="p-0.5 w-20  justify center bg-yellow-400 "></p>
           </div>
-
         </div>
-      
+      </div>
 
-      <div className="flex flex-col items-center">
+      <div className=" flex flex-col items-center">
         <p className="text-yellow-300 text-center p-4 text-3xl">PAS À PAS </p>
         <p className="text-4xl text-center p-5 text-black font-bold">
           COMMENT ÇA MARCHE
         </p>
-        <p className="p-0.5 w-50 bg-yellow-400 "></p>
+        <p className="p-0.5 w-50 bg-yellow-400 ">
+
+        </p>
       </div>
-      <div className="flex flex-raw justify-center ">
-        <img
-          src="/icon/iconl.png"
-          alt="image 1"
-          className=" items-center gap-3 p-20 font-bold h-100 "
-        />
-        <div className="">
-          <h1 className="font-bold text-3xl">PLANIFICATION</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            gravida cursus.
-          </p>
-        </div>
-        <img
-          src="/icon/iconp.png"
-          alt="image 1"
-          className="flex items-center gap-3 p-20 font-bold  h-100 "
-        />
+      <div className="flex flex-raw p-20  text-center items-center justify-center">
         <div>
-          <h1 className="font-bold text-3xl">CONCEPTION</h1>
-          <p>
-            conception Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas gravida cursus.
-          </p>
+          <div>
+            <img
+              src="/icon/iconl.png"
+              alt="image 1"
+              className="   p-20 font-bold h-100 "
+            />
+          </div>
+          <div className="  ">
+            <h1 className="font-bold text-center text-3xl">PLANIFICATION</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              gravida cursus.
+            </p>
+          </div>
         </div>
 
-        <img
-          src="/icon/iconl.png"
-          alt="image 1"
-          className=" flex items-center gap-3 p-20 font-bold h-100"
-        />
         <div>
-          <h1 className="font-bold text-3xl"> BÂTIMENT </h1>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            gravida cursus.
-          </p>
+          <div>
+            <img
+              src="/icon/iconp.png"
+              alt="image 1"
+              className="  p-20  font-bold  h-100 "
+            />
+          </div>
+          <div className="  ">
+            <h1 className="font-bold text-3xl">CONCEPTION</h1>
+            <p>
+              conception Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Maecenas gravida cursus.
+            </p>
+          </div>
         </div>
-
-        <img
-          src="/icon/iconp.png"
-          alt="image 1"
-          className=" flex items-center gap-3 p-20 font-bold h-100"
-        />
         <div>
-          <h1 className="font-bold text-3xl">TERMINER </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            gravida cursus.
-          </p>
+          <div>
+            <img
+              src="/icon/iconl.png"
+              alt="image 1"
+              className="   p-20 font-bold h-100"
+            />
+          </div>
+          <div className="
+           ">
+            <h1 className="font-bold text-3xl"> BÂTIMENT </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              gravida cursus.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="/icon/iconp.png"
+              alt="image 1"
+              className="  p-20 font-bold h-100"
+            />
+          </div>
+          <div className=" text-center
+           ">
+            <h1 className="font-bold text-3xl">TERMINER </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              gravida cursus.
+            </p>
+          </div>
         </div>
       </div>
       <div className="bg-black/80 p-10">
@@ -378,31 +393,36 @@ export default function Page() {
               <p className="p-5"> MIKE ANGELS</p>
               <p className="text-yellow-400 "> Architecte</p>
             </div>
-          </div>{" "}
-          <div className=" text-white">
-            <p className=" text-blox w-64 h-50 border text-white  p-4 justify-between text-center ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              gravida cursus eleifend. Nullam ornare sapien.
-            </p>
+          </div>
+          <div className="text-white flex flex-col items-center">
+            <div className=" text-white">
+              <p className=" text-blox w-64 h-50 border text-white  p-4 justify-between text-center ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas gravida cursus eleifend. Nullam ornare sapien.
+              </p>
+            </div>
             <img
               src="/icon/id-g.jpg"
               alt="image 1"
-              className="  font-bold h-40  rounded-full  "
+              className="  font-bold h-40  text-center rounded-full  "
             />
+
             <div className="text-3xl p-7 text-center">
               <p className="p-5"> CARL OSWAL</p>
               <p className="text-yellow-400 ">Constructeur</p>
             </div>
-          </div>{" "}
-          <div className="x text-white">
-            <p className="text-blox w-64 h-50 border text-white  p-4 justify-between ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              gravida cursus eleifend. Nullam ornare sapien.
-            </p>
+          </div>
+          <div className="text-white flex flex-col items-center">
+            <div className=" text-white">
+              <p className="text-blox w-64 h-50 border text-white  p-4 justify-between  text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas gravida cursus eleifend. Nullam ornare sapien.
+              </p>
+            </div>
             <img
               src="/icon/id-g2.jpg"
               alt="image 1"
-              className="  font-bold h-40 w-40 rounded-full  "
+              className="  font-bold h-40 w-40  rounded-full  "
             />
             <div className="text-3xl p-7 text-center">
               <p className="p-5"> MARK SMITH</p>
@@ -411,6 +431,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+
       <div className="bg-black/30 flex flex-row  p-7 justify-center gap-60 ">
         <img
           src="/icon/stmp.png"
@@ -443,12 +464,13 @@ export default function Page() {
           className="  font-bold h-40 w-40 text-center rounded-full  "
         />
       </div>
-      <div className="">
-        <div className="text-center p-10 gap-60 ">
+      <div className="flex flex-col text-center items-center ">
+        <div className=" p-10 gap-60 ">
           <h1 className=" text-amber-300 text-4xl ">LE BLOG</h1>
           <p className="font-bold text-4xl ">DERNIÈRES NOUVELLES</p>
+          <p className="p-0.5 w-20 bg-yellow-400 "></p>
         </div>
-        <div className="flex flex-row gap-10 justify-center">
+        <div className="flex flex-row text-left justify-center">
           <div>
             <img
               src="/background/bg-lok.jpg"
@@ -456,68 +478,79 @@ export default function Page() {
               className="  font-bold  w-auto h-100  text-center   "
             />
             <div>
-              <h1 className="butto  ">GRANDS PROJETS</h1>
+              <h1 className="  font-bold text-3xl ">GRANDS PROJETS</h1>
+              <p className="italic text-black/30">
+                19 mars 2018 / Super utilisateur
+              </p>
+              <p className="">
+                Sample text. Lorem ipsum dolor sit amet,consectetur adipiscing
+                elit nullam nunc justo sagittis suscipit ultrices.
+              </p>
+              <button className="underline ">Read more</button>
+            </div>
+          </div>
+          <div>
+            <img
+              src="/background/br-bg.jpg"
+              alt="image 4"
+              className="  font-bold  w-auto h-100 text-center   "
+            />
+            <div>
+              <h1 className="  font-bold text-3xl ">GRANDS PROJETS</h1>
               <p>19 mars 2018 / Super utilisateur</p>
               <p>
                 Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit nullam nunc justo sagittis suscipit ultrices.
               </p>
-              <button>Read more</button>
+              <button className="underline ">Read more</button>
             </div>
           </div>
 
-          <img
-            src="/background/br-bg.jpg"
-            alt="image 4"
-            className="  font-bold  w-auto h-100 text-center   "
-          />
-          <div>
-            <h1 className="butto  ">GRANDS PROJETS</h1>
-            <p>19 mars 2018 / Super utilisateur</p>
-            <p>
-              Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit nullam nunc justo sagittis suscipit ultrices.
-            </p>
-            <button>Read more</button>
+          <div className="gab-10">
+            <img
+              src="/background/im-bg2.jpg"
+              alt="image 4"
+              className="  font-bold  w-auto h-100  text-center   "
+            />
+            <div>
+              <h1 className="  font-bold text-3xl ">GRANDS PROJETS</h1>
+              <p className="font-light text-shadow-stone-400    ">
+                19 mars 2018 / Super utilisateur
+              </p>
+              <p>
+                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit nullam nunc justo sagittis suscipit ultrices.
+              </p>
+              <button className="underline ">Read more</button>
+            </div>
           </div>
-          <img
-            src="/background/im-bg2.jpg"
-            alt="image 4"
-            className="  font-bold  w-auto h-100  text-center   "
-          />
-          <div>
-            <h1 className="butto  ">GRANDS PROJETS</h1>
-            <p>19 mars 2018 / Super utilisateur</p>
-            <p>
-              Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit nullam nunc justo sagittis suscipit ultrices.
-            </p>
-            <button>Read more</button>
-          </div>
-        </div>
-      </div>
-      <div className="text-white flex jus justify-center text-center bg-amber-400  ">
-        <div>
-          <h1 className=" p-10 text-6xl ">CONSTRUCTION ELVO</h1>
-          <p className=" ">
-            C'est un modèle étonnant pour de nombreuses utilisations! Vérifie-le
-            maintenant!
-          </p>
         </div>
 
-        <div className="text-center">
-          <button className="border border-white rounded-2xl text-3xl hover:bg-white p-6  justify-between">
-            ACHETER MAINTENANT
-          </button>
+        <div className="text-white p-20 w-full flex flex-row justify-center bg-amber-400  ">
+          <div>
+            <h1 className="  text-6xl ">CONSTRUCTION ELVO</h1>
+            <p className=" ">
+              C'est un modèle étonnant pour de nombreuses utilisations!
+              Vérifie-le maintenant!
+            </p>
+          </div>
+
+          <div className="text-center">
+            <button
+              className="border border-white rounded-2xl text-3xl hover:bg-white p-6  justify-between
+          "
+            >
+              ACHETER MAINTENANT
+            </button>
+          </div>
         </div>
       </div>
       <div className="bg-black  flex flex-row text-2xl justify-center">
-        <button className="text-yellow-400 p-10   hover:underline ">
+        <button className="text-yellow-400 p-10  hover:underline ">
           Template
         </button>
-        <h1 className=" flex items-center">créé avec</h1>
+        <h1 className=" flex flex-center text-white items-center">créé avec</h1>
         <button className="text-yellow-400 p-10  hover:underline  =">
-          {" "}
           Nicepage
         </button>
       </div>
